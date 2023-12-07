@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _htmlDeltaConverterPlugin = HtmlToDeltaConverter.htmlToDelta("html");
+  final _htmlDeltaConverterPlugin = HtmlToDeltaConverter.htmlToDelta("<p>1234</p>");
 
   @override
   void initState() {
@@ -28,14 +28,6 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-
-    setState(() {
-
-    });
   }
 
   @override
