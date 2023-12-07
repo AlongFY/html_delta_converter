@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _htmlDeltaConverterPlugin = HtmlToDeltaConverter();
+  final _htmlDeltaConverterPlugin = HtmlToDeltaConverter.htmlToDelta("html");
 
   @override
   void initState() {
