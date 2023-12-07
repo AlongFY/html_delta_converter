@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:html_delta_converter/html_delta_converter.dart';
 
 void main() {
@@ -16,7 +15,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
   final _htmlDeltaConverterPlugin = HtmlToDeltaConverter.htmlToDelta("<p>1234</p>");
 
   @override
@@ -38,7 +36,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Text('Running on: $_htmlDeltaConverterPlugin\n'),
         ),
       ),
     );
